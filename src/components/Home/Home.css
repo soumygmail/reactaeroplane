@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.home{
+    padding-top:10rem;
+    padding-bottom: 5px;
+    text-align: center;
+    gap:2rem;
+    flex-direction: column;
+   
+  
+}
+
+.mainText{
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 2.5rem;
+
+}
+
+ .homeImages{
+    width:100%;
+    margin: 1rem auto 0;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 20rem;
+
+} 
+
+.videoDiv{
+    width:100%;
+ justify-content:center;
+ padding-top: 30px;
+ 
+}
+.video{
+    padding-top: 20px;
+   border-radius: 30rem; 
+   width: 50%;
+}
+
+/* .plane{
+    margin-top: 30px;
+    position:absolute;
+    width:100%;
+    top: -10%;
+} */
+
+/* .homeImages{
+position:relative;
+top:6%;
+} */
+
+@media  screen and (max-width:769px){
+
+    .video{
+        padding-top: 50px;
+    }
+}
+

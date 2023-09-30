@@ -1,0 +1,14 @@
+.imgDiv{
+   display:flex;
+   justify-content:center;
+
+}
+
+.imgDiv img{
+    border-radius:30%;
+}
+
+.grids{
+    margin:10px;
+    gap:1.5rem;
+}

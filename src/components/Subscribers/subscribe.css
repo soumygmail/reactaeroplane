@@ -1,0 +1,12 @@
+.subscribe{
+    display:flex;
+    justify-content: center;
+}
+
+.sectionContainer input{
+    border:none;
+    outline:none;
+    background:transparent;
+    padding: 1rem .5rem;
+}
+

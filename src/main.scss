@@ -1,0 +1,353 @@
+// lets import google font
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One&family=Delicious+Handrawn&family=Kanit:wght@500&family=Oswald&family=Poltawski+Nowy&family=Sigmar&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Sigmar', cursive;
+}
+
+
+:root{
+    --PrimaryColor: rgb(236, 115, 108);
+    --SecondaryColor: hsl(87, 17%, 88%);
+    --colorOne: hsl(15, 74%, 70%);
+    --colorTwo: hsl(28,100%,82%);
+    --HoverColor:hsl(225, 56%, 59%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor:hsl(0, 0%, 12%);
+    --textColor:hsl(240,1%,48%);
+    --borderColor:hsl(0,0%,12%);
+    --whiteColorDeam:hsl(0, 0%, 93%);
+    --greyBg:hsl(0, 0%, 96%);
+    --greyText:rgb(145, 145, 145);
+    --inputColor:hsl(330, 12%, 97%);
+    --boxShadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0,0,0,0.05) 0px 4px 6px -2px;
+    --transition: .4s ease-in-out;
+
+}
+
+
+// Defaulty Styling
+
+body{
+    background: var(--whiteColor);
+}
+
+a{
+    text-decoration:none;
+}
+li{
+    list-style: none;
+    cursor:pointer;
+}
+
+.section{
+    padding: 4rem 0 2rem;
+
+}
+.container{
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+}
+
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+// .none{
+//     display:none;
+// }
+
+.flex{
+    display:flex;
+    align-items:center;
+}
+
+.grid{
+    display:grid;
+    align-items:center;
+}
+
+.btn{
+    padding: 1rem 1.5rem;
+    background: var(--whiteColor);
+    border:none;
+    outline:none;
+    border-radius: 3rem;
+    cursor: pointer;
+    color: var(--blackColor);
+
+    a{
+        color: var(--blackColor);
+        font-weight:500;
+    }
+
+
+    &:hover{
+        background: var(--HoverColor);
+
+    }
+}
+
+img, video{
+    width: 100;
+    height:auto;
+
+}
+
+input{
+    font-size:100%;
+    color:var(--greyText);
+}
+
+p{
+    font-size: 13px;
+    color: var(--greyText);
+    line-height:22px;
+}
+
+h4{
+    padding: 1rem 0;
+    font-weight: 700;
+    color: var(--blackColor);
+
+}
+
+h2{
+    font-size:25px;
+    padding: 1rem 0;
+    color: var(--blackColor);
+}
+
+
+// Navbar section.
+
+.navBar{
+    position:fixed;
+    flex-direction: column;
+    width:100%;
+    z-index:1000;
+
+    .navBarOne, .navBarTwo{
+        justify-content: space-between;
+        padding: 1rem;
+        width:100%;
+    }
+
+    .navBarOne{
+        background: var(--SecondaryColor);
+
+        .icon:hover{
+            color:var(--PrimaryColor);
+        }
+
+        .atb{
+            gap: 1rem;
+
+            span{
+                color: var(--blackColor);
+                font-size:11px;
+                cursor:pointer;
+
+
+                &:hover{
+                    color: var(--HoverColor);
+                    font-size:700;
+                }
+            }
+        }
+    }
+
+
+    .navBarTwo{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        top:3rem;
+        padding:1.3rem 1rem;
+        position:fixed;
+        transition: .3s ease-in-out;
+
+
+        .logoDiv{
+           .logo{
+            width: 50%;
+           }
+        }
+
+        
+
+nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: rgb(126, 126, 202);
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px green;
+}
+
+#navbar {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#navbar li{
+    list-style:none;
+    padding:0 20px;
+    position:relative; 
+}
+
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight:600;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover{
+    color:#17cf97
+}
+
+
+#navbar li a:hover::after,
+#navbar li a.active::after{
+    content:"";
+    width:30%;
+    height:2px;
+    background: #17cf97;
+    position:absolute;
+    bottom:-4px;
+    left:20px;
+
+}
+
+/* nav ul{
+    display:flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+} */
+
+#mobile {
+    display:none;
+}
+
+// @media  screen and (max-width:769px){
+//     #navbar {
+//         display:flex;
+//         flex-direction: column;
+//         align-items: flex-start;
+//         justify-content: flex-start;
+//         position:fixed;
+//         top:90px;
+//         right:-300px;
+//         width:300px;
+//         height: 100vh;
+//         background-color: rgb(195, 165, 116);
+//         box-shadow: 0 40px 60px pink;
+//         padding: 40px 0 0 10px;
+//     }
+
+//     #navbar.active{
+//         right:0px;
+//     }
+
+//     #navbar li{
+//         margin-bottom: 25px;;
+//     }
+
+//     #mobile {
+//         display:block;
+//     }
+
+//     #mobile li {
+//         font-size:24px;
+//         cursor:pointer;
+//     }
+// }
+
+//         @media screen and (max-width:799px) {
+//           .navBarMenu{
+//              position:absolute;
+//              background: var(--SecondaryColor);
+//              padding: 1.5rem;
+//              border-radius:10px;
+//              top:5rem;
+//              right:-50%;
+//              width:50%;
+//              transform: translateX(50%);
+//              z-index:2000;
+//              box-shadow:black;
+//              border: 3px solid var(--whiteColor);
+//              transition: .4s ease-in-out;
+
+
+//              .menu{
+//                 flex-direction: column;
+//                 gap: .5rem;
+//                 text-align:center;
+
+
+//                 .listItem{
+//                     padding: .5rem 0;
+//                     cursor:pointer;
+//                     color: var(--blackColor);
+
+
+//                     &:hover{
+//                         color: var(--PrimaryColor);
+//                         font-weight: 700;
+//                     }
+
+//                 }
+//              }
+
+//              .btnOne{
+//                 display: block;
+//                 justify-content: center;
+//                 margin:auto;
+//                 margin-top:1rem;
+//              }
+//           }
+
+//           .btnTwo{
+           
+//             display:none;
+          
+//         }
+//         }
+
+//         .toggleIcon{
+//             .icon{
+//                 font-size: 30px;
+//                 color:black;
+//             }
+//         }
+
+
+//     }
+// }
+
+
+
+
+
+
+

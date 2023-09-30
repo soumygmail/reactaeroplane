@@ -1,0 +1,31 @@
+.cardsDiv{
+    border:1px solid grey;
+    padding:20px;
+    border-radius:15px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: grey;
+    width:80%;
+    margin-left:90px;
+    
+}.cardsDiv
+
+.iconDiv{
+    font-size:30px;
+    margin:10px;
+    background-color:lightblue;
+    padding:8px;
+    width:55px;
+    border-radius:10px;
+    
+}
+.singleCard{
+    padding:70px;
+    margin:20px;
+  background-color:white;
+  border:1px solid grey;
+  border-radius:80px;
+}
+
+

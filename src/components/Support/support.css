@@ -1,0 +1,37 @@
+.imgDiv img{
+    margin-top: 50px;
+    width:40%;
+   
+}
+/* 
+.support{
+    background-color: rgb(248, 243, 243);
+    border:1px solid grey;
+} */
+.imgDiv{
+    display:flex;
+    justify-content: center;
+}
+.titlesDiv small{
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    font-size:13px;
+    line-height: 1.5rem;
+
+}
+
+.number{
+    background-color: rgb(83, 168, 196);
+    padding: 5px;
+    width: 40px;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 13px;
+}
+
+.colorTwo{
+    background-color: orange;
+}
+.colorThree{
+    background-color: rgb(236, 213, 171);
+}

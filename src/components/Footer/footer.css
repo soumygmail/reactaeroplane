@@ -1,0 +1,23 @@
+.sectionContainer{
+    gap:2.5rem;
+}
+
+.gridOne{
+    gap:1rem;
+    justify-content:center;
+    margin:auto;
+}
+
+.socialIcon{
+    display: flex;
+    justify-content: center;
+}
+
+
+.socialIcon .icon{
+
+    height:50px;
+    width:30px;
+    border-radius: 10rem;
+    margin:10px;
+}
